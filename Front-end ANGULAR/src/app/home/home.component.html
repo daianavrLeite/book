@@ -1,0 +1,28 @@
+<app-carousel></app-carousel>
+<div class="container">
+  
+    <div class="secao">
+      <h2 class="text-center">Featured Books of the Week</h2>
+      <h5 class="text-center">
+        Featured books of the week in category Fiction
+        
+        Take advantage of the offers below, discount books, the sweetest ones</h5>
+    </div>
+  
+    <hr />
+  
+    <div class="row" style="margin-bottom: 50px">
+      <div class="col-sm-4 teste" *ngFor="let book of AtributoBook,  let i = index">
+        <div class="card">
+          <img class="card-img-top" >
+          <div class="card-block">
+            <h4 class="card-title" [routerLink]="['/ofertaIndividual', book.id]">{{book.name}} </h4>
+            <p class="card-text">{{book.title}} </p>
+            <img class="card-img-top img1" [src]="book.image[0].url">
+            <p class="preco"> € {{book.price}} </p>            
+            <a class="btn btn-outline-info" [routerLink]="['/ofertaIndividual', book.id]">More</a>
+          </div>
+        </div>
+      </div> 
+    <hr />
+  </div>

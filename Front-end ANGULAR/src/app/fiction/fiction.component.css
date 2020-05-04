@@ -1,0 +1,21 @@
+*{
+    font-family: 'Lora', serif;
+}
+.price{
+    font-size: 1.3rem;
+    color: rgb(0, 98, 155)
+}
+
+h3{
+    margin-top: 5%
+}
+h5{
+    margin-top: 5%
+}
+h4{
+    text-align: center;
+    color: rgb(0, 98, 155)
+}
+.row{
+    margin-bottom: 20px
+}

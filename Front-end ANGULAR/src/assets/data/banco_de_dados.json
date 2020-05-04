@@ -1,0 +1,94 @@
+{ 
+
+	"book": [
+		{
+			"id": 1,
+			"name": "Harry Potter",
+			"category": "fiction",
+			"title": "Colection Harry Potter's books",
+			"price": 115.90,
+			"description": "Harry Potter is a series of fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic and subjugate all wizards and Muggles (non-magical people).",
+			"destaque": true,
+			"imagens": [
+				{"url": "./assets/harryPotter/imagem1.jpg"},
+				{"url": "./assets/harryPotter/imagem2.jpg"},
+				{"url": "./assets/harryPotter/imagem3.jpg"},
+				{"url": "./assets/harryPotter/imagem4.jpg"}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Lord of the rings",
+			"category": "fiction",
+			"title": "Colection Lord of the rings",
+			"price": 145.99,
+			"description": "The Lord of the Rings is an epic high fantasy novel written by English author and scholar J. R. R. Tolkien. The story began as a sequel to Tolkien's 1937 fantasy novel The Hobbit, but eventually developed into a much larger work. Written in stages between 1937 and 1949, The Lord of the Rings is one of the best-selling novels ever written, with over 150 million copies sold.",
+			"destaque": true,
+			"imagens": [
+				{"url": "assets/senhordosAneis/imagem1.jpg"},
+				{"url": "assets/senhordosAneis/imagem2.jpg"},
+				{"url": "assets/senhordosAneis/imagem3.jpg"},
+				{"url": "assets/senhordosAneis/imagem4.jpg"}
+			]
+		},
+		{
+			"id": 3,
+			"name": "The Hunger Games",
+			"category": "fiction",
+			"title": "Colection The Hunger Games books",
+			"price": 115.90,
+			"description": "The Hunger Games is a 2008 dystopian novel by the American writer Suzanne Collins. It is written in the voice of 16-year-old Katniss Everdeen, who lives in the future, post-apocalyptic nation of Panem in North America. The Capitol, a highly advanced metropolis, exercises political control over the rest of the nation. The Hunger Games is an annual event in which one boy and one girl aged 12–18 from each of the twelve districts surrounding the Capitol are selected by lottery to compete in a televised battle royale to the death.",
+			"destaque": true,
+			"imagens": [
+				{"url": "assets/jogosVorazes/imagem1.jpg"},
+				{"url": "assets/jogosVorazes/imagem2.jpg"},
+				{"url": "assets/jogosVorazes/imagem3.jpg"},
+				{"url": "assets/jogosVorazes/imagem4.jpg"}
+			]
+		},
+		{
+			"id": 4,
+			"name": "The fault in our stars",
+			"category": "romance",
+			"title": "The fault in our stars",
+			"price": 115.90,
+			"description": "The Fault in Our Stars is a 2014 American romantic drama film directed by Josh Boone, based on the 2012 novel of the same name by John Green. The film stars Shailene Woodley and Ansel Elgort; with Laura Dern, Sam Trammell, Nat Wolff, and Willem Dafoe playing supporting roles. Woodley plays Hazel Grace Lancaster, a sixteen-year-old cancer patient who is forced by her parents to attend a support group, where she meets and subsequently falls in love with Augustus Waters, another cancer patient, played by Elgort.",
+			"destaque": true,
+			"imagens": [
+				{"url": "assets/aCulpaDasEstrelas/imagem1.png"},
+				{"url": "assets/aCulpaDasEstrelas/imagem2.jpg"},
+				{"url": "assets/aCulpaDasEstrelas/imagem3.jpg"},
+				{"url": "aCulpaDasEstrelas/imagem4.jpg"}
+			]
+		},
+		{
+			"id": 5,
+			"name": "Jane Austen",
+			"category": "romance",
+			"title": "Colection Jane Austen's books",
+			"price": 190.90,
+			"description": "Jane Austen was an English novelist known primarily for her six major novels, which interpret, critique and comment upon the British landed gentry at the end of the 18th century. Austen's plots often explore the dependence of women on marriage in the pursuit of favourable social standing and economic security. Her works critique the novels of sensibility of the second half of the 18th century and are part of the transition to 19th-century literary realism.[2][b] Her use of biting irony, along with her realism, humour, and social commentary, have long earned her acclaim among critics, scholars, and popular audiences alike.",
+			"destaque": true,
+			"imagens": [
+				{"url": "assets/janeAusten/imagem1.jpg"},
+				{"url": "assets/janeAusten/imagem2.jpg"},
+				{"url": "assets/janeAusten/imagem3.jpg"},
+				{"url": "assets/janeAusten/imagem4.jpg"}
+			]
+		},
+		{
+			"id": 6,
+			"name": "More Than words",
+			"category": "romance",
+			"title": "More Than words",
+			"price": 200.90,
+			"description": "More Than Words is a heartbreaking and romantic novel about grief, loss, love, and self-discovery, and how we choose which life we are meant to live.",
+			"destaque": true,
+			"imagens": [
+				{"url": "assets/moreThan/imagem1.jpg"},
+				{"url": "assets/moreThan/imagem2.jpg"},
+				{"url": "assets/moreThan/imagem3.jpg"}
+			]
+		}	
+	]
+}

@@ -1,0 +1,38 @@
+*{
+    font-family: 'Bitter', serif;
+}
+h2{
+    margin-top: 5%;
+    font-size: 2rem;
+
+    
+}
+h5{
+    margin-top: 5%
+}
+h4,p{
+    text-align: center;
+    cursor: pointer;
+    
+}
+.card-block, .teste{
+  margin-bottom: 10%
+}
+.img1{
+    padding: 10px;
+    height: 190px;
+}
+.secao{
+    margin-bottom: 5%
+}
+.btn{
+    margin-left: 40%
+}
+.preco{
+    font-size: 1.3rem;
+    color: rgb(0, 98, 155)
+}
+h4{
+    border:bold;
+    color: rgb(0, 98, 155)
+}

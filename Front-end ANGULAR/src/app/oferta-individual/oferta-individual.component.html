@@ -1,0 +1,60 @@
+<div class="container">
+
+    <!-- so entra nesse trecho somente se o atributo oferta da classe do componente for undefined ,
+       quando a promessa resolver e a atualizar o atributo ele entra no template -->
+    <div class="oferta" *ngIf="ofertaIndividual!==undefined">
+  
+      <div class="row">
+        <div class="col">
+          <h4>{{ofertaIndividual.title}}</h4>
+        </div>
+      </div>
+  
+      <div class="row" >
+        <div class="col-md-6">
+          <div class="img_capa">
+            <img [src]="ofertaIndividual.image[0].url" />
+          </div>
+  
+          <div class="thumbnails">
+            <img *ngFor="let oferta of ofertaIndividual.image" [src]="oferta.url"  />
+      
+          </div>
+        </div>
+  
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col text-center">
+              <p>{{ofertaIndividual.description}}</p>
+            </div>
+            
+          </div>
+  
+          <div class="row">
+            <div class="col text-center">
+              <h1 class="price">€ {{ofertaIndividual.price}}</h1>
+            </div>
+          </div>
+          <ng-template [ngIf]="successMessage">
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+           <a routerLink="/ordem-compra"> <strong >Your </strong> </a>{{successMessage}}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="successMessage = null">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </ng-template>
+          <div class="row">
+            <div class="col text-center">
+              <button  
+               (click)="adicionarItemCarrinho()" 
+               type="button" 
+               class="btn btn-warning btn-lg">Basket</button>
+            </div>
+          </div>
+            
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>

@@ -1,0 +1,44 @@
+
+<div class="container">
+  
+    <div class="secao">
+        <h3 class="text-center">Featured books of the week in category Fiction
+        </h3>
+        <h5 class="text-center">
+            Featured books of the week in category Fiction
+            
+            Take advantage of the offers below, discount books, the sweetest ones</h5>
+    </div>
+  
+    <hr />
+  
+    <div *ngFor="let romance of AtributoRomance,  let i = index" class="row">
+      <div class="col-md-4">
+        <img [src]="romance.image[0].url"  class="img-fluid" />
+      </div>
+  
+      <div class="col-md-8">
+        <div class="row">
+          <h4>{{romance.title}}</h4>
+        </div>
+  
+        <div class="row">
+          <h5>{{romance.description}}</h5>
+        </div>
+  
+        <div class="row">
+          <p>Category: <b>{{romance.category}}</b></p>
+        </div>
+  
+        <div class="row">
+          <p class="price">€{{romance.price}}</p>
+        </div>
+                <div class="row">
+          <button class="btn btn-outline-info" [routerLink]="['/ofertaIndividual', romance.id]" >Know more</button>
+        </div>
+      </div>
+    </div>
+  
+    <hr />
+  
+  </div>

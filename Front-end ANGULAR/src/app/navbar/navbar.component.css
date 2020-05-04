@@ -1,0 +1,13 @@
+.navbar{
+    background-color: rgb(10, 149, 192) !important;
+    margin: 10px
+}
+a{
+    font-size: 1.6rem;
+    color:#fff!important;
+    font-family: 'Lora', serif;
+}
+a:hover{
+    color:black!important;
+    
+}

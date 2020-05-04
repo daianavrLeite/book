@@ -1,0 +1,125 @@
+<div class="container">
+        <div class="ordem-compra">
+          <form [formGroup]="form">
+          
+            <h5>Your Purchase</h5>
+            <hr />
+      
+            <div *ngFor="let itemCompra of itensCarrinho "class="form-row" style="background: #FAFAFA; padding: 20px; border-bottom: solid 1px #F0F0F0">
+              <div class="form-group col-sm-1">
+                <img [src]="itemCompra.image.url" class="img-fluid">
+              </div>
+              <div class="form-group col-sm-6">
+                <strong>{{itemCompra.title}}</strong>
+                <br />
+               {{itemCompra.description}}
+              </div>
+      
+              <div>
+                <div class="row">
+                  <div class="col">
+                    <button type="button" class="btn btn-link" (click)="removeItem(itemCompra)">-</button>
+                    {{itemCompra.quantidade}}
+                    <button type="button" class="btn btn-link" (click)="addItem(itemCompra)">+</button>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="form-group col-sm-3 d-flex justify-content-end">
+               {{itemCompra.quantidade * itemCompra.price | currency:'EUR'}}
+              </div>
+            </div>
+            
+            
+            <div class="form-row">
+              <div class="form-group col d-flex justify-content-end">
+                <h4 id="teste">
+                    Total purchase:{{carrinhoService.totalCarrinhoCompras() | currency: 'EUR'}}</h4>
+              </div>
+            </div>
+            <br />
+      
+      
+            <h5>
+                Delivery Data</h5>
+            <hr />
+      
+            <div class="form-row">
+      
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control " placeholder="Address" autocomplete="off"   formControlName="address">
+               
+              </div>
+      
+              <div class="form-group col-md-2">
+                <input type="text" class="form-control " placeholder="Number" autocomplete="off"   formControlName="number">
+                <br />
+                <!-- <small class="form-text text-muted">Ok</small> -->
+              </div>
+      
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control" placeholder="Complement"  autocomplete="off" formControlName="complement">
+              </div>
+      
+            </div>
+            <br />
+      
+            <h5>
+                Payment data</h5>
+            <hr />
+      
+            <div class="form-row">
+                
+              <div class="form-group col-md-3">
+                <select class="form-control " formControlName="paymentMethod">
+                  <option value="0" >Choice an option</option>
+                  <option value="Money">Money</option>
+                  <option value="Debit">Debit</option>
+                  <option value="Credit">Credit Card</option>
+                </select>
+      
+                <!-- <div class="invalid-feedback">
+                    Select a payment method</div> -->
+              </div>
+            </div>
+            <!-- {{form.valid|json}}
+            {{form.value|json}} -->
+            <hr />
+            <button type="button" class="btn btn-success btn-lg" [disabled]="!form.valid" (click)="purchase()" data-toggle="modal" data-target="#myModal">Confirm Purchase</button>
+
+    
+            
+          </form>
+        </div>
+
+
+          <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close"  routerLink="/"  (click)="zerar()" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                  </div>
+                  <div class="container">
+                      <div *ngFor="let item of itensCarrinho">
+                        <h4>Title: {{item.title}}</h4>
+                        <p>Price: {{item.price}}</p>
+                        <p>Quantity:{{item.quantidade}}</p>                  
+                      </div>
+                      <h4 id="teste">
+                        Total purchase:{{carrinhoService.totalCarrinhoCompras() | currency: 'EUR'}}</h4>
+                  </div>
+                   
+                  <div class="modal-body">
+                    <p class="p1">Order Added Successfully.</p>
+                  </div>
+              
+                </div>
+                
+              </div>
+            </div>
+
+      </div>

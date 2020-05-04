@@ -1,0 +1,19 @@
+i, .footer-copyright{
+    color: white !important;
+    cursor: pointer;
+   
+}
+i:hover{
+    color: black !important;
+}
+*{
+    background-color: rgb(10, 149, 192) !important;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+
+}
+a:hover{
+    color: black
+}

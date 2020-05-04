@@ -1,0 +1,13 @@
+repository\ImageRepository.class
+repository\BookRepository.class
+services\BookService.class
+controllers\BookController.class
+filter\CORSFilter.class
+repository\EntityRepository.class
+services\imageService.class
+services\EntityService.class
+controllers\EntityController.class
+model\Image.class
+model\Book.class
+model\Entity_.class
+application\App.class

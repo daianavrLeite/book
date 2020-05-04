@@ -1,0 +1,27 @@
+.book{
+    width: 10%;
+    height: 50px;
+}
+.navbar{
+    width: 131%;
+}
+
+.carrinho{
+    width: 5% !important;
+    height: 46px!important;
+    margin-right: 10%;
+    cursor: pointer;
+}
+.navbar-brand{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    text-shadow: 1px 1px  rgb(88, 91, 92) ,
+    2px 2px rgb(212, 182, 182)
+    3px 3px rgb(18, 19, 19) ;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+}
+.row{
+    width:77%;
+    height: 80px;
+}
